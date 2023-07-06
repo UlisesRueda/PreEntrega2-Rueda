@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "font-titulo";
+    src: url(../assets/fonts/sunshineformulaDEMO.otf)}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr repeat(2,2fr) 0.5fr;
+    grid-template-areas:
+    "header header header header"
+    "nav main main aside"
+    "nav main main aside"
+    "footer footer footer footer";
+    background-image: url(../assets/img/canchatigre2.jpg);
+}
+
+                 /*----HEADER-----*/
+header {
+    height: 100%;
+    grid-area: header;
+}
+
+#titulo {
+    position: relative;
+    left: 5%;
+    bottom: 100%;
+    font-family: font-titulo;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 500px;
+    width: 100%;
+}
+                      /*------NAV------*/
+nav {
+    grid-area: nav;
+} 
+
+#logo {
+    position: relative;
+    left: 20px;
+    width: 100px;
+}
+
+#nav {
+    text-decoration: none;
+    position: relative;
+    top: 70px;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+#nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 100px;
+}
+
+#nav2 {
+    text-decoration: none;
+    position: relative;
+    top: 70px;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+#nav2 li a:hover {
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 100px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+#indice {
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.466);
+    position: sticky;
+    top: 20px;
+    z-index: 2;
+}
+
+#indice li a:hover {
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 500px;
+}
+
+                     /*-------MAIN-------*/
+
+main {
+    height: 80%;
+    grid-area: main;
+}
+
+#text-main{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.418);
+    font-weight: bold;
+}
+
+.titulo-main{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#carrusel {
+    background-color: rgba(255, 255, 255, 0.418);
+    position: relative;
+    left: 15%;
+    width: 70%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#parrafo-descriptivo {
+    width: 50%;
+    position: relative;
+    right: 15%;
+    top: 160px;
+    background-color: rgba(255, 255, 255, 0.418);
+    font-weight: bold;
+    text-align: center;
+}
+
+#tigre2021 {
+    position: relative;
+    left: 40%;
+    width: 70%;
+    bottom: 150px;
+    z-index: 1;
+}
+
+#tigre2007 {
+    position: relative;
+    right: 20%;
+    width: 70%;
+    bottom: 350px;
+}
+
+#parrafo-descriptivo2 {
+    width: 50%;
+    position: relative;
+    left: 60%;
+    background-color: rgba(255, 255, 255, 0.418);
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+#parrafo-relleno {
+    position: relative;
+    bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.418);
+    font-weight: bold;
+    text-align: center;
+}
+
+#formulario {
+    position: relative;
+    left: 50px;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+#sobrenosotros{
+    position: relative;
+    bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.418);
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    height: 100%;
+    grid-area: footer;
+    background-color: rgba(74, 84, 224, 0.747);
+}
+
+@media screen and (max-width: 480px) {
+    
+    @font-face {
+        font-family: "font-titulo";
+        src: url(../assets/fonts/sunshineformulaDEMO.otf)}
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 0.5fr repeat(2,2fr) 0.5fr;
+        grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main aside"
+        "footer footer footer footer";
+        background-image: url(../assets/img/canchatigre2.jpg);
+    }
+    
+                     /*----HEADER-----*/
+    header {
+        height: 100%;
+        grid-area: header;
+    }
+    
+    #titulo {
+        position: relative;
+        left: 50%;
+        font-family: font-titulo;
+        font-size: 35px;
+        text-align: center;
+        text-decoration: underline;
+        background-color: rgba(255, 255, 255, 0.61);
+        border-radius: 500px;
+        width: 80%;
+    }
+                          /*------NAV------*/
+    nav {
+        grid-area: nav;
+    } 
+    
+    #logo {
+        position: relative;
+        left: 20px;
+        width: 100px;
+    }
+    
+    #nav {  
+        text-decoration: none;
+        position: relative;
+        top: 50%;
+        left: 20px;
+        font-size: 40px;
+        background-color: rgba(255, 255, 255, 0.418);
+        width: 90%;
+    }
+    
+    #nav li a:hover {
+        background-color: rgba(0, 0, 0, 0.37);
+        border-radius: 100px;
+    }
+
+    #nav2 {  
+        text-decoration: none;
+        position: relative;
+        bottom: 20%;
+        left: 5px;
+        font-size: 40px;
+        background-color: rgba(255, 255, 255, 0.418);
+        width: 100%;
+    }
+
+    #nav2 li a:hover {
+        background-color: rgba(0, 0, 0, 0.37);
+        border-radius: 100px;
+    }
+    
+    aside {
+        grid-area: aside;
+    }
+    
+    #indice {
+        margin-top: 20px;
+        width: 120px;
+        background-color: rgba(255, 255, 255, 0.466);
+        position: sticky;
+        top: 20px;
+        z-index: 2;
+    }
+    
+    #indice li a:hover {
+        background-color: rgba(0, 0, 0, 0.37);
+        border-radius: 500px;
+    }
+    
+                         /*-------MAIN-------*/
+    
+    main {
+        height: 80%;
+        grid-area: main;
+    }
+    
+    #text-main{
+        margin-top: 20px;
+        position: relative;
+        left: 5%;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.418);
+        font-weight: bold;
+    }
+    
+    .titulo-main{
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    #carrusel {
+        background-color: rgba(255, 255, 255, 0.418);
+        position: relative;
+        left: 5%;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #parrafo-descriptivo {
+        width: 100%;
+        position: relative;
+        left: 5%;
+        top: 100%;
+        background-color: rgba(255, 255, 255, 0.418);
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #tigre2021 {
+        position: relative;
+        left: 5%;
+        width: 100%;
+        bottom: 150px;
+        z-index: 1;
+    }
+    
+    #tigre2007 {
+        position: relative;
+        left: 5%;
+        width: 100%;
+        bottom: 350px;
+    }
+    
+    #parrafo-descriptivo2 {
+        width: 100%;
+        position: relative;
+        left: 5%;
+        top: 223px;
+        background-color: rgba(255, 255, 255, 0.418);
+        font-weight: bold;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    #parrafo-relleno {
+        width: 100%;
+        position: relative;
+        left: 17px;
+        top: 10px;
+        background-color: rgba(255, 255, 255, 0.418);
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #formulario {
+        width: 100%;
+        position: relative;
+        left: 30px;
+        bottom: 5%;
+        background-color: rgba(255, 255, 255, 0.418);
+    }
+    
+    footer {
+        height: 100%;
+        grid-area: footer;
+        background-color: rgba(74, 84, 224, 0.747);
+    }
+}
